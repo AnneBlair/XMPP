@@ -1,0 +1,24 @@
+
+
+
+CocoaLumberjack：日志框架
+CocoaAsyncSocket：底层网络框架，实现异步Socket网络通讯
+需要添加CFNetwork&Security框架依赖
+KissXML：XML解析框架
+需要添加libxml2.dylib框架依赖
+需要指定如下编译选项：
+Other Linker Flags = -lxml2
+Header Search Paths = /usr/include/libxml2
+libidn
+将以下4个文件夹导入到项目
+Authentication
+Categories
+Core
+Utilities
+
+另外还需要添加libresolv.dylib依赖
+导入XMPP扩展框架
+Extensions
+
+将Sample_XMPPFramework.h添加到项目，并且重命名为XMPPFramework.h
+
